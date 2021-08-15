@@ -11,7 +11,7 @@
   --grid-indent: 24px;
   --grid-gap: 16px;
   --columns-count: 12;
-  --columns-color: rgba(255, 0, 0, 0.1);
+  --columns-color: rgba(255, 0, 0, 0.3);
   --columns-width: calc(100% / var(--columns-count) - var(--grid-gap) );
   content: "";
   pointer-events: none;
