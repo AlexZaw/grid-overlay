@@ -1,0 +1,32 @@
+.grid-overlay {
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grid-overlay::before {
+  --grid-indent: 24px;
+  --grid-gap: 16px;
+  --columns-count: 12;
+  --columns-color: rgba(255, 0, 0, 0.1);
+  --columns-width: calc(100% / var(--columns-count) - var(--grid-gap) );
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: var(--grid-indent);
+  right: var(--grid-indent);
+  bottom: 0;
+  margin-right: calc(var(--grid-gap) * -1);
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--columns-color),
+    var(--columns-color) var(--columns-width),
+    transparent var(--columns-width),
+    transparent calc(var(--columns-width) + var(--grid-gap))
+  );
+}
