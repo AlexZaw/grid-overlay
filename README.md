@@ -5,9 +5,9 @@ This code will add an adaptive grid overlay to your page.
 ## Install:
 
 1. link `grid-overlay.css` as an external style or paste code in your own styles.
-2. add a `<div class="grid-overlay"></div>` inside <body> or in your wrapper.
-3.  set the `position:relative;` property to the element that you put the `<div class="grid-overlay"></div>` inside.
-4. Enjoy adaptive grid overlay.
+2.just add the `grid-overlay` class to the element in which you want to display the grid
+  e.g `<body class="grid-overlay"></body>` or `<div class="wrapper grid-overlay"></div>`
+3. Enjoy adaptive grid overlay.
 
 ## Setting up the grid:
   `--grid-indent` - margins on the edges of the grid
