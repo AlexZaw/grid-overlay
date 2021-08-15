@@ -11,6 +11,9 @@ This code will add an adaptive grid overlay to your page.
 
 ## Setting up the grid:
   `--grid-indent` - margins on the edges of the grid
+  
   `--grid-gap` - distance between columns
+  
   `--columns-count` - number of columns
+  
   `--columns-color` - column color
