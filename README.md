@@ -2,7 +2,7 @@
 
 This code will add an adaptive grid overlay to your page.
 
-## Usage:
+## Install:
 
 1. link *grid-overlay.css* as an external style or paste code in your own styles.
 2. add a `<div class="grid-overlay"></div>` inside <body> or in your wrapper.
@@ -17,3 +17,28 @@ This code will add an adaptive grid overlay to your page.
   `--columns-count` - number of columns
   
   `--columns-color` - column color
+  
+  ## media queries example
+  
+  ```css
+  @media (max-width: 767px) {
+  .grid-overlay::before {
+    --columns-count: 4;  //set 4 columns
+    --grid-indent:0;     //set zero margins on the edges of the grid
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-overlay::before {
+    --columns-count: 8;  //set 8 columns
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-overlay::before {
+    --columns-count: 12;  //set 12 columns
+    --grid-gap: 24px;     //set the distance between the columns to 24px
+    --grid-indent: 16px;  //set the margins at the edges of the grid to 16 pixels
+  }
+}
+```
