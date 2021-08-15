@@ -42,3 +42,6 @@ This code will add an adaptive grid overlay to your page.
   }
 }
 ```
+
+## Screenshot
+  ![image](https://user-images.githubusercontent.com/26135033/129493451-5de61778-ca1b-4761-9540-4338b5fcc7d7.png)
