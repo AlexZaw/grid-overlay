@@ -1,3 +1,7 @@
+.grid-overlay{
+  position: relative;
+}
+
 .grid-overlay::before {
   --grid-indent: 16px;
   --grid-gap: 16px;
