@@ -1,4 +1,4 @@
-.grid-overlay{
+.grid-overlay {
   position: relative;
 }
 
@@ -7,7 +7,7 @@
   --grid-gap: 16px;
   --columns-count: 12;
   --columns-color: rgba(255, 0, 0, 0.1);
-  --columns-width: calc(100% / var(--columns-count) - var(--grid-gap) );
+  --columns-width: calc(100% / var(--columns-count) - var(--grid-gap));
   content: "";
   pointer-events: none;
   position: absolute;
